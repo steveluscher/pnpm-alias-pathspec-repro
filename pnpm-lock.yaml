@@ -1,0 +1,85 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      turbo:
+        specifier: 1.11.1-canary.0
+        version: 1.11.1-canary.0
+
+  packages/app:
+    dependencies:
+      luigi:
+        specifier: workspace:../waluigi
+        version: link:../waluigi
+
+  packages/luigi: {}
+
+  packages/waluigi: {}
+
+packages:
+
+  /turbo-darwin-64@1.11.1-canary.0:
+    resolution: {integrity: sha512-p3taHSS6HxhScwzPTvVEtnu0KTiAYFG34AD9ttnLRqoW8IRyY3LQ3CoVIXiKSX+fPWeGLWKpvhZM7nhd7YBUYw==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-darwin-arm64@1.11.1-canary.0:
+    resolution: {integrity: sha512-08ph6hqjRv3lHuhsWvEsvU/CdjLQZ+QZSJdd0v6qBIpdO5q1Pd9wSRGOAOpIcjj3qCjrL+lM23TZxau1bbzsPQ==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-linux-64@1.11.1-canary.0:
+    resolution: {integrity: sha512-rgkPIUmSmvME/PLXP8Gz8ActchhiliTVQebFCZSxH+yP1vYBLJC+Yin4JNr2LC2PeS6pkjblyWujE4M6QVAhKQ==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-linux-arm64@1.11.1-canary.0:
+    resolution: {integrity: sha512-uLgzDoLQzL7mVwlUWRGWU7JTbzYP/0s71TJ5fLCqrZdCNU1aWdOvxVppVvvaBwao+yiuxomqz4zhaOIvzwvWjA==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-windows-64@1.11.1-canary.0:
+    resolution: {integrity: sha512-iO+YCS1LohEj6cxeQxQ3D7Gb0J1noW6fmjkwa81aDkhghmXAC7m0vH0CdoF5zbZmcR195UHy28CPcTxue9XxjA==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-windows-arm64@1.11.1-canary.0:
+    resolution: {integrity: sha512-018Eh5OEReEUpM5FcKRbrUT3RTZckuE0cFag+V5prO8zuzFQIOY55xezJ6dOIxZC25sMM4Zm4r+9eL/bt5l1fw==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo@1.11.1-canary.0:
+    resolution: {integrity: sha512-Gcu0n83ISgXGtzU+28qXlqAnDcro/vP4/lbvDz/7QLMVCMON9ciX9Gejqrv3e63k0VAG5wvBaK3Io0O5TVfCGQ==}
+    hasBin: true
+    optionalDependencies:
+      turbo-darwin-64: 1.11.1-canary.0
+      turbo-darwin-arm64: 1.11.1-canary.0
+      turbo-linux-64: 1.11.1-canary.0
+      turbo-linux-arm64: 1.11.1-canary.0
+      turbo-windows-64: 1.11.1-canary.0
+      turbo-windows-arm64: 1.11.1-canary.0
+    dev: true

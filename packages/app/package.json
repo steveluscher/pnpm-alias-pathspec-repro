@@ -1,0 +1,9 @@
+{
+  "name": "app",
+  "scripts": {
+    "hello": "echo 'Hello from app'"
+  },
+  "dependencies": {
+    "luigi": "workspace:../waluigi"
+  }
+}

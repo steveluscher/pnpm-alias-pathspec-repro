@@ -1,0 +1,6 @@
+{
+  "name": "waluigi",
+  "scripts": {
+    "hello": "echo 'Hello from waluigi'"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "pnpm-alias-pathspec-repro",
+  "devDependencies": {
+    "turbo": "1.11.1-canary.0"
+  }
+}
